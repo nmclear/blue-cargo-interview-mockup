@@ -1,0 +1,9 @@
+.port-call-table-container {
+  width: 80%;
+  padding-top: 10px;
+  overflow-x: auto;
+}
+
+.port-call-table-container .table {
+  min-width: 700px;
+}

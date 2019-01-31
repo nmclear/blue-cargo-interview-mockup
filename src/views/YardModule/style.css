@@ -1,0 +1,19 @@
+.yard-module-container {
+  min-height: 100%;
+}
+
+.yard-module-container h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.yard-module-container .slider {
+  padding: 10px 0;
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.yard-module-container .yard-blocks-group {
+  justify-content: center;
+}

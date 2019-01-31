@@ -1,0 +1,52 @@
+.discharge-module-container {
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.discharge-module-container .vessel-info,
+.discharge-module-container .yard-info {
+  flex: 1;
+}
+
+.discharge-module-container .vessel-info {
+  align-items: center;
+}
+
+.discharge-module-container .vessel-info .vessel-content {
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  width: 80%;
+  min-width: 400px;
+}
+.discharge-module-container .dwell-time p,
+.discharge-module-container .vessel-containers-draggable p,
+.discharge-module-container .yard-info .alert-msg {
+  margin: 0;
+  padding: 0;
+}
+
+.discharge-module-container .dwell-time p,
+.discharge-module-container .vessel-containers-draggable p,
+.discharge-module-container .yard-info .alert-msg {
+  font-size: 18px;
+}
+
+.discharge-module-container .yard-blocks-group {
+  justify-content: center;
+  align-content: center;
+}
+
+.discharge-module-container .dwell-time,
+.discharge-module-container .vessel-containers-draggable {
+  height: 50px;
+  display: flex;
+}
+
+.discharge-module-container .vessel-containers-draggable {
+  background-color: #3c6382;
+  border-radius: 5px;
+  width: 70px;
+  color: #fff;
+  cursor: -webkit-grab;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}

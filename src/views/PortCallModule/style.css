@@ -1,0 +1,38 @@
+.port-module-container {
+  min-height: calc(100% - 40px);
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.port-module-container .map-container {
+  height: 90vh;
+  width: 42%;
+  padding: 0 auto;
+}
+
+.port-module-container .column-one {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.port-module-container .column-one h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.file-upload-container {
+  height: 120px;
+  width: 250px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.file-upload-container p {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 0;
+  padding: 0 0 4px;
+}
+.file-upload-container input {
+  width: 170px;
+}

@@ -1,28 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import SideNav from './components/SideNav';
+import YardModule from './views/YardModule';
+import BlockModule from './views/BlockModule';
+import PortCallModule from './views/PortCallModule';
+import DischargeModule from './views/DischargeModule';
+
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+const App = () => (
+  <Router>
+    <div className="container">
+      <SideNav />
+      <div className="router-container">
+        <Switch>
+          <Route exact path="/" component={YardModule} />
+          <Route exact path="/blocks" component={BlockModule} />
+          <Route exact path="/port" component={PortCallModule} />
+          <Route exact path="/discharge" component={DischargeModule} />
+        </Switch>
       </div>
-    );
-  }
-}
+    </div>
+  </Router>
+);
 
 export default App;
