@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Tooltip from '@material-ui/core/Tooltip';
 import PlaceIcon from '@material-ui/icons/Place';
-import './style.css';
 
 const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
@@ -32,7 +31,7 @@ class PortCallMap extends Component {
   render() {
     const { safeToRenderMarkers } = this.state;
     return (
-      <div className="port-map-container">
+      <div className="port-map-container" style={{ width: '100%', height: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: GOOGLE_API_KEY }}
           defaultCenter={{
